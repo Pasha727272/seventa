@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2a3a"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#g)"/>
+  <circle cx="200" cy="160" r="70" fill="#7EB8DC" opacity="0.15"/>
+  <image href="/logo.png" x="155" y="115" width="90" height="90" preserveAspectRatio="xMidYMid slice"/>
+  <image href="/stocks/AAPL.svg" x="70" y="250" width="36" height="36"/>
+  <image href="/stocks/MSFT.svg" x="112" y="250" width="36" height="36"/>
+  <image href="/stocks/GOOGL.svg" x="154" y="250" width="36" height="36"/>
+  <image href="/stocks/AMZN.svg" x="196" y="250" width="36" height="36"/>
+  <image href="/stocks/META.svg" x="238" y="250" width="36" height="36"/>
+  <image href="/stocks/NVDA.svg" x="280" y="250" width="36" height="36"/>
+  <image href="/stocks/TSLA.svg" x="182" y="290" width="36" height="36"/>
+  <text x="200" y="230" text-anchor="middle" fill="#7EB8DC" font-family="Inter,Arial" font-size="18" font-weight="700" letter-spacing="3">SEVENTA</text>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#0d1208"/>
+  <rect x="90" y="70" width="220" height="260" rx="28" fill="#1a2e10" stroke="#76B900" stroke-width="3"/>
+  <rect x="115" y="100" width="170" height="130" rx="16" fill="#243818"/>
+  <image href="/stocks/NVDA.svg" x="128" y="125" width="48" height="48"/>
+  <image href="/stocks/AMD.svg" x="176" y="125" width="48" height="48"/>
+  <image href="/stocks/INTC.svg" x="224" y="125" width="48" height="48"/>
+  <image href="/stocks/MU.svg" x="176" y="175" width="48" height="48"/>
+  <text x="200" y="280" text-anchor="middle" fill="#76B900" font-family="Inter,Arial" font-size="28" font-weight="800">CHIPS</text>
+  <text x="200" y="308" text-anchor="middle" fill="#ffffff99" font-family="Inter,Arial" font-size="14">Semis tray</text>
+</svg>

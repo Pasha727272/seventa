@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect width="400" height="400" fill="#140a0c"/>
+  <circle cx="200" cy="190" r="110" fill="#2a1218" stroke="#E31937" stroke-width="4"/>
+  <circle cx="200" cy="190" r="78" fill="#1a0c10" stroke="#E31937" stroke-width="2"/>
+  <image href="/stocks/TSLA.svg" x="160" y="140" width="80" height="80"/>
+  <text x="200" y="250" text-anchor="middle" fill="#fff" font-family="Inter,Arial" font-size="16" font-weight="700">ELONCOIN</text>
+  <text x="200" y="340" text-anchor="middle" fill="#ffffff66" font-family="Inter,Arial" font-size="14">Single-name TSLA</text>
+</svg>
