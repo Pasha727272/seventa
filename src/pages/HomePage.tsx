@@ -30,57 +30,73 @@ export function HomePage() {
   }, [query, filter])
 
   return (
-    <div className="mx-auto max-w-6xl px-4 pb-24 pt-28 md:px-6 md:pt-32">
-      <section className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr]">
-        <div className="text-left lg:pr-4">
-          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-bold tracking-[0.16em] text-white/60 uppercase">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#7EB8DC]" />
-            Built natively for Robinhood Chain
-          </p>
+    <div className="pb-24">
+      <section className="hero-stage relative isolate left-1/2 w-screen max-w-[100vw] -translate-x-1/2 overflow-hidden">
+        <video
+          className="hero-video pointer-events-none absolute inset-0 h-full w-full object-cover"
+          src="/hero.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          aria-hidden
+        />
+        <div className="pointer-events-none absolute inset-0 bg-black/20" aria-hidden />
+        <div className="hero-video-fade pointer-events-none absolute inset-0" aria-hidden />
 
-          <h1 className="max-w-[16ch] text-[40px] leading-[1.05] font-extrabold tracking-tight md:text-[56px]">
-            Skip the single stock.{' '}
-            <span className="text-[#7EB8DC]">Buy the whole Mag7 lunch.</span>
-          </h1>
+        <div className="relative mx-auto grid min-h-[min(88svh,820px)] max-w-6xl items-center gap-10 px-4 pt-28 pb-16 md:gap-12 md:px-6 md:pt-32 md:pb-20 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="hero-copy relative z-[1] text-left lg:pr-4">
+            <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/55 px-3 py-1.5 text-[10px] font-bold tracking-[0.16em] text-white/80 uppercase backdrop-blur-md">
+              <span className="h-1.5 w-1.5 rounded-full bg-[#7EB8DC]" />
+              Built natively for Robinhood Chain
+            </p>
 
-          <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/65">
-            Seventa is the Magnificent Seven — Apple, Microsoft, Google, Amazon, Meta, Nvidia,
-            Tesla. Instead of picking one stock for lunch, you buy the whole tray. $LUNCH is the
-            meme for the retail investor whose portfolio is Big Tech on a lunch tray.
-          </p>
-          <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-white/55">
-            Trade $LUNCH → fees accumulate → the treasury buys all seven stocks equally → holders
-            receive pieces of all seven. No staking. No claims.
-          </p>
+            <h1 className="max-w-[16ch] text-[40px] leading-[1.05] font-extrabold tracking-tight text-white md:text-[56px]">
+              Skip the single stock.{' '}
+              <span className="text-[#A8D4EC]">Buy the whole Mag7 lunch.</span>
+            </h1>
 
-          <div className="mt-8 flex flex-wrap gap-3">
-            <Link
-              to="/launch"
-              className="inline-flex items-center gap-2 rounded-full bg-[#7EB8DC] px-5 py-3 text-[13px] font-bold text-[#061018]"
-            >
-              Launch a token
-              <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/pulse"
-              className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-3 text-[13px] font-semibold text-white"
-            >
-              Feel the pulse →
-            </Link>
+            <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-white/90">
+              Seventa is the Magnificent Seven — Apple, Microsoft, Google, Amazon, Meta, Nvidia,
+              Tesla. Instead of picking one stock for lunch, you buy the whole tray. $LUNCH is the
+              meme for the retail investor whose portfolio is Big Tech on a lunch tray.
+            </p>
+            <p className="mt-3 max-w-xl text-[14px] leading-relaxed text-white/80">
+              Trade $LUNCH → fees accumulate → the treasury buys all seven stocks equally → holders
+              receive pieces of all seven. No staking. No claims.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                to="/launch"
+                className="inline-flex items-center gap-2 rounded-full bg-[#7EB8DC] px-5 py-3 text-[13px] font-bold text-[#061018]"
+              >
+                Launch a token
+                <ArrowRight size={16} />
+              </Link>
+              <Link
+                to="/pulse"
+                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/50 px-5 py-3 text-[13px] font-semibold text-white backdrop-blur-md"
+              >
+                Feel the pulse →
+              </Link>
+            </div>
+
+            <ul className="mt-8 space-y-2 text-[13px] text-white/75">
+              <li>· Mag7 is already a finance meme — everyone knows the club.</li>
+              <li>· Lunch tray is clear: not one stock, a full meal.</li>
+              <li>· Unlike $CHIPS (semis) or $ELONCOIN (Tesla only) — the whole Big Tech set.</li>
+            </ul>
           </div>
 
-          <ul className="mt-8 space-y-2 text-[13px] text-white/50">
-            <li>· Mag7 is already a finance meme — everyone knows the club.</li>
-            <li>· Lunch tray is clear: not one stock, a full meal.</li>
-            <li>· Unlike $CHIPS (semis) or $ELONCOIN (Tesla only) — the whole Big Tech set.</li>
-          </ul>
-        </div>
-
-        <div className="flex w-full justify-center">
-          <Mag7Tray />
+          <div className="flex w-full justify-center">
+            <Mag7Tray />
+          </div>
         </div>
       </section>
 
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
       <section className="mt-16 space-y-4">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
           <label className="relative flex-1">
@@ -161,6 +177,7 @@ export function HomePage() {
           </div>
         )}
       </section>
+      </div>
     </div>
   )
 }

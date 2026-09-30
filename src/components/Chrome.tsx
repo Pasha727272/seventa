@@ -24,7 +24,7 @@ export function Chrome() {
       <header className="pointer-events-none fixed inset-x-0 top-0 z-50 px-3 pt-3 md:px-5 md:pt-4">
         <div className="pointer-events-auto mx-auto flex max-w-6xl items-center gap-2 rounded-full border border-white/10 bg-black/85 px-3 py-2 shadow-lg backdrop-blur-xl md:gap-3 md:px-4">
           <Link to="/" className="flex shrink-0 items-center gap-2 pr-1" onClick={() => setOpen(false)}>
-            <BrandMark size={32} />
+            <BrandMark size={40} className="drop-shadow-[0_0_10px_rgba(126,184,220,0.35)]" />
             <span className="hidden text-[15px] font-semibold text-white sm:inline">Seventa</span>
           </Link>
 

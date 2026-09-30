@@ -5,15 +5,17 @@ import type { StockLeg } from '../data/product'
 export function StockLogo({
   stock,
   size = 28,
+  className = '',
 }: {
   stock: Pick<StockLeg, 'ticker' | 'color' | 'logoUrl' | 'name'>
   size?: number
+  className?: string
 }) {
   const [failed, setFailed] = useState(false)
 
   return (
     <span
-      className="inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white shadow-sm"
+      className={`inline-flex shrink-0 items-center justify-center overflow-hidden rounded-full border border-white/10 bg-white shadow-sm ${className}`}
       style={{ width: size, height: size }}
       title={stock.name ?? stock.ticker}
     >

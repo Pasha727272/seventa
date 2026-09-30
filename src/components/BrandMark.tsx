@@ -1,18 +1,21 @@
 export function BrandMark({
   size = 32,
   className = '',
+  fill = false,
 }: {
   size?: number
   className?: string
+  /** Stretch to parent — ignores fixed pixel size */
+  fill?: boolean
 }) {
   return (
     <img
-      src="/logo.png"
+      src="/crystal.png?v=6"
       alt="Seventa"
-      width={size}
-      height={size}
-      className={`rounded-xl object-cover ${className}`}
-      style={{ width: size, height: size }}
+      width={fill ? undefined : size}
+      height={fill ? undefined : size}
+      className={`${fill ? 'h-full w-full object-contain' : 'object-contain'} ${className}`}
+      style={fill ? undefined : { width: size, height: size }}
     />
   )
 }

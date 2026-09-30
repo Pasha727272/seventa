@@ -35,9 +35,11 @@ export function CrateCard({
             </span>
           ))}
         </div>
-        <div className="absolute bottom-3 left-3">
-          <StockRow stocks={token.basket} size={28} />
-        </div>
+        {token.basket.length > 0 && (
+          <div className="absolute bottom-3 left-3">
+            <StockRow stocks={token.basket} size={28} />
+          </div>
+        )}
       </div>
 
       <div className="space-y-3 p-4">
